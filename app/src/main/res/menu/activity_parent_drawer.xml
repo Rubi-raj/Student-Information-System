@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_phomework"
+            android:icon="@drawable/ic_homework"
+            android:title="@string/menu_homework" />
+        <item
+            android:id="@+id/nav_pexams"
+            android:icon="@drawable/ic_exams"
+            android:title="@string/menu_exams" />
+
+        <item
+            android:id="@+id/nav_pannouncement"
+            android:icon="@drawable/ic_announcements"
+            android:title="@string/menu_announcement" />
+
+        <item
+            android:id="@+id/nav_pholidays"
+            android:icon="@drawable/ic_holidays"
+            android:title="@string/menu_holidays" />
+        <item
+            android:id="@+id/nav_pothers"
+            android:icon="@drawable/ic_others"
+            android:title="Others" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_pmyProfile"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="@string/menu_myProfile" />
+            <item
+                android:id="@+id/nav_btnLogout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+
+</menu>

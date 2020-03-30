@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="700dp">
+
+                <TextView
+                    android:id="@+id/stvtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MY PROFILE"
+                    android:textColor="#090000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.02" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/sProfileImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/uploadimg"
+                    app:civ_border_color="@color/colorAccent"
+                    app:civ_border_overlay="false"
+                    app:civ_border_width="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stvtitle"
+                    app:layout_constraintVertical_bias="0.02" />
+
+                <View
+                    android:id="@+id/sview1"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#C9C7C6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sProfileImage"
+                    app:layout_constraintVertical_bias="0.031" />
+
+                <ImageView
+                    android:id="@+id/sivname"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.101"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview1"
+                    app:layout_constraintVertical_bias="0.02"
+                    app:srcCompat="@drawable/ic_student_white" />
+
+                <TextView
+                    android:id="@+id/stvname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name :"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.025"
+                    app:layout_constraintStart_toEndOf="@+id/sivname"
+                    app:layout_constraintTop_toBottomOf="@+id/sview1"
+                    app:layout_constraintVertical_bias="0.049" />
+
+                <View
+                    android:id="@+id/sview2"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#C9C7C6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stvname"
+                    app:layout_constraintVertical_bias="0.036" />
+
+                <ImageView
+                    android:id="@+id/sivregno"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview2"
+                    app:layout_constraintVertical_bias="0.02"
+                    app:srcCompat="@drawable/ic_registernumber" />
+
+                <TextView
+                    android:id="@+id/stvregno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Regno :"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.063"
+                    app:layout_constraintStart_toEndOf="@+id/sivregno"
+                    app:layout_constraintTop_toBottomOf="@+id/sview2"
+                    app:layout_constraintVertical_bias="0.047" />
+
+                <View
+                    android:id="@+id/sview4"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#C9C7C6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/stvregno"
+                    app:layout_constraintVertical_bias="0.039" />
+
+                <ImageView
+                    android:id="@+id/sivclass"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintBottom_toTopOf="@+id/sview5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.111"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview4"
+                    app:layout_constraintVertical_bias="0.454"
+                    app:srcCompat="@drawable/ic_standard" />
+
+                <TextView
+                    android:id="@+id/stvclass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class :"
+                    app:layout_constraintBottom_toTopOf="@+id/sview5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.075"
+                    app:layout_constraintStart_toEndOf="@+id/sivclass"
+                    app:layout_constraintTop_toBottomOf="@+id/sview4"
+                    app:layout_constraintVertical_bias="0.450" />
+
+                <View
+                    android:id="@+id/sview5"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#C9C7C6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview4"
+                    app:layout_constraintVertical_bias="0.133" />
+
+                <ImageView
+                    android:id="@+id/sivsec"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintBottom_toTopOf="@+id/sview6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.113"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview5"
+                    app:layout_constraintVertical_bias="0.461"
+                    app:srcCompat="@drawable/ic_section" />
+
+                <TextView
+                    android:id="@+id/stvsec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Section :"
+                    app:layout_constraintBottom_toTopOf="@+id/sview6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.075"
+                    app:layout_constraintStart_toEndOf="@+id/sivsec"
+                    app:layout_constraintTop_toBottomOf="@+id/sview5"
+                    app:layout_constraintVertical_bias="0.465" />
+
+                <View
+                    android:id="@+id/sview6"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#C9C7C6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview5"
+                    app:layout_constraintVertical_bias="0.179" />
+
+                <ImageView
+                    android:id="@+id/sivgender"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toTopOf="@+id/sview7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.113"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview6"
+                    app:layout_constraintVertical_bias="0.629"
+                    app:srcCompat="@drawable/ic_gender" />
+
+                <TextView
+                    android:id="@+id/stvgender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender :"
+                    app:layout_constraintBottom_toTopOf="@+id/sview7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.061"
+                    app:layout_constraintStart_toEndOf="@+id/sivgender"
+                    app:layout_constraintTop_toBottomOf="@+id/sview6"
+                    app:layout_constraintVertical_bias="0.522" />
+
+                <View
+                    android:id="@+id/sview7"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#C9C7C6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview6"
+                    app:layout_constraintVertical_bias="0.226" />
+
+                <ImageView
+                    android:id="@+id/sivparent"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toTopOf="@+id/sview8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.099"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview7"
+                    app:layout_constraintVertical_bias="0.476"
+                    app:srcCompat="@drawable/ic_parent" />
+
+                <TextView
+                    android:id="@+id/stvparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parent Name : "
+                    app:layout_constraintBottom_toTopOf="@+id/sview8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.091"
+                    app:layout_constraintStart_toEndOf="@+id/sivparent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview7"
+                    app:layout_constraintVertical_bias="0.487" />
+
+                <View
+                    android:id="@+id/sview8"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#C9C7C6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview7"
+                    app:layout_constraintVertical_bias="0.304" />
+
+                <ImageView
+                    android:id="@+id/sivmno"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toTopOf="@+id/sview9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.099"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview8"
+                    app:layout_constraintVertical_bias="0.466"
+                    app:srcCompat="@drawable/ic_smartphone" />
+
+                <TextView
+                    android:id="@+id/stvmno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number :"
+                    app:layout_constraintBottom_toTopOf="@+id/sview9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.060"
+                    app:layout_constraintStart_toEndOf="@+id/sivmno"
+                    app:layout_constraintTop_toBottomOf="@+id/sview8"
+                    app:layout_constraintVertical_bias="0.514" />
+
+                <View
+                    android:id="@+id/sview9"
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:background="#C9C7C6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview8"
+                    app:layout_constraintVertical_bias="0.406" />
+
+                <ImageView
+                    android:id="@+id/sivemail"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.099"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sview9"
+                    app:layout_constraintVertical_bias="0.173"
+                    app:srcCompat="@drawable/ic_gmail" />
+
+                <TextView
+                    android:id="@+id/stvemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email :"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.097"
+                    app:layout_constraintStart_toEndOf="@+id/sivemail"
+                    app:layout_constraintTop_toBottomOf="@+id/sview9"
+                    app:layout_constraintVertical_bias="0.238" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

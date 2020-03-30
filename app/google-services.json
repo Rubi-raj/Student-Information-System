@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "880155352081",
+    "firebase_url": "https://sis-database-developer.firebaseio.com",
+    "project_id": "sis-database-developer",
+    "storage_bucket": "sis-database-developer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880155352081:android:0d087eb4988c4b12ada5b0",
+        "android_client_info": {
+          "package_name": "com.example.studentinformationsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880155352081-k3pa0khbgih3ttdeiep408lmcg8belg0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studentinformationsystem",
+            "certificate_hash": "ca5baa6501b3f4a9f9ab68749f4a88c92264f23b"
+          }
+        },
+        {
+          "client_id": "880155352081-aqcvqpigrsiinjd7hk8svi8fqgf87s9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByJcCVKr3jzfs_wIfu4meEex5p9XftU5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880155352081-aqcvqpigrsiinjd7hk8svi8fqgf87s9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

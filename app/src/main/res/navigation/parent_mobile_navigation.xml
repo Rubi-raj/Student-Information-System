@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_mobile_navigation"
+    app:startDestination="@+id/nav_phomework">
+
+    <fragment
+        android:id="@+id/nav_phomework"
+        android:name="com.example.studentinformationsystem.ParentPort.ParentHomeworkFragment"
+        android:label="HomeWork"
+        tools:layout="@layout/fragment_parent_homework" />
+    <fragment
+        android:id="@+id/nav_pexams"
+        android:name="com.example.studentinformationsystem.ParentPort.ParentExamsFragment"
+        android:label="@string/menu_exams"
+        tools:layout="@layout/fragment_parent_exams" />
+
+    <fragment
+        android:id="@+id/nav_pannouncement"
+        android:name="com.example.studentinformationsystem.ParentPort.ParentAnnouncementsFragment"
+        android:label="@string/menu_announcement"
+        tools:layout="@layout/fragment_parent_announcements" />
+
+    <fragment
+        android:id="@+id/nav_pholidays"
+        android:name="com.example.studentinformationsystem.ParentPort.ParentHolidaysFragment"
+        android:label="@string/menu_holidays"
+        tools:layout="@layout/fragment_parent_holidays" />
+    <fragment
+        android:id="@+id/nav_pothers"
+        android:name="com.example.studentinformationsystem.ParentPort.ParentOthersFragment"
+        android:label="Others"
+        tools:layout="@layout/fragment_parent_others" />
+
+    <fragment
+        android:id="@+id/nav_pmyProfile"
+        android:name="com.example.studentinformationsystem.ParentPort.MyProfile"
+        android:label="@string/menu_myProfile"
+        tools:layout="@layout/fragment_parent_myprofile" />
+
+
+</navigation>

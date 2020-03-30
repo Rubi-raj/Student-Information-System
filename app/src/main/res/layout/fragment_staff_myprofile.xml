@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp">
+
+            <TextView
+                android:id="@+id/ttvtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY PROFILE"
+                android:textColor="#090000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.02" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/tProfileImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/uploadimg"
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_overlay="false"
+                app:civ_border_width="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ttvtitle"
+                app:layout_constraintVertical_bias="0.02" />
+
+            <View
+                android:id="@+id/tview1"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:background="#C9C7C6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tProfileImage"
+                app:layout_constraintVertical_bias="0.031" />
+
+            <ImageView
+                android:id="@+id/tivname"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tview1"
+                app:layout_constraintVertical_bias="0.02"
+                app:srcCompat="@drawable/ic_teacher" />
+
+            <TextView
+                android:id="@+id/ttvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.050"
+                app:layout_constraintStart_toEndOf="@+id/tivname"
+                app:layout_constraintTop_toBottomOf="@+id/tview1"
+                app:layout_constraintVertical_bias="0.03" />
+
+            <View
+                android:id="@+id/tview2"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:background="#C9C7C6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ttvname"
+                app:layout_constraintVertical_bias="0.036" />
+
+            <ImageView
+                android:id="@+id/tivstaffid"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tview2"
+                app:layout_constraintVertical_bias="0.02"
+                app:srcCompat="@drawable/ic_registernumber" />
+
+            <TextView
+                android:id="@+id/ttvstaffid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Staff ID :"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintStart_toEndOf="@+id/tivstaffid"
+                app:layout_constraintTop_toBottomOf="@+id/tview2"
+                app:layout_constraintVertical_bias="0.047" />
+
+            <View
+                android:id="@+id/tview4"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:background="#C9C7C6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ttvstaffid"
+                app:layout_constraintVertical_bias="0.039" />
+
+            <ImageView
+                android:id="@+id/tivsubject"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                app:layout_constraintBottom_toTopOf="@+id/tview6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tview4"
+                app:layout_constraintVertical_bias="0.625"
+                app:srcCompat="@drawable/ic_subject" />
+
+            <TextView
+                android:id="@+id/ttvsubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject :"
+                app:layout_constraintBottom_toTopOf="@+id/tview6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.076"
+                app:layout_constraintStart_toEndOf="@+id/tivsubject"
+                app:layout_constraintTop_toBottomOf="@+id/tview4"
+                app:layout_constraintVertical_bias="0.575" />
+
+            <View
+                android:id="@+id/tview6"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:background="#C9C7C6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tview4"
+                app:layout_constraintVertical_bias="0.15" />
+
+            <ImageView
+                android:id="@+id/tivgender"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toTopOf="@+id/tview7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.113"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tview6"
+                app:layout_constraintVertical_bias="0.40"
+                app:srcCompat="@drawable/ic_gender" />
+
+            <TextView
+                android:id="@+id/ttvgender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender :"
+                app:layout_constraintBottom_toTopOf="@+id/tview7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintStart_toEndOf="@+id/tivgender"
+                app:layout_constraintTop_toBottomOf="@+id/tview6"
+                app:layout_constraintVertical_bias="0.45" />
+
+            <View
+                android:id="@+id/tview7"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:background="#C9C7C6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tview6"
+                app:layout_constraintVertical_bias="0.17" />
+
+            <ImageView
+                android:id="@+id/tivmno"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toTopOf="@+id/tview9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.099"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tview7"
+                app:layout_constraintVertical_bias="0.4"
+                app:srcCompat="@drawable/ic_smartphone" />
+
+            <TextView
+                android:id="@+id/ttvmno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number :"
+                app:layout_constraintBottom_toTopOf="@+id/tview9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.089"
+                app:layout_constraintStart_toEndOf="@+id/tivmno"
+                app:layout_constraintTop_toBottomOf="@+id/tview7"
+                app:layout_constraintVertical_bias="0.488" />
+
+            <View
+                android:id="@+id/tview9"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:background="#C9C7C6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.50"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tview7"
+                app:layout_constraintVertical_bias="0.233" />
+
+            <ImageView
+                android:id="@+id/tivemail"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tview9"
+                app:layout_constraintVertical_bias="0.047"
+                app:srcCompat="@drawable/ic_gmail" />
+
+            <TextView
+                android:id="@+id/ttvemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email :"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/tivemail"
+                app:layout_constraintTop_toBottomOf="@+id/tview9"
+                app:layout_constraintVertical_bias="0.091" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</ScrollView>
