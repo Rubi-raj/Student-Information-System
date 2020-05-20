@@ -110,7 +110,7 @@ public class StudentRegister extends AppCompatActivity {
                 android.R.layout.simple_spinner_dropdown_item, list2);
         Section.setAdapter(adapter2);
 
-        progressDialog = new ProgressDialog(this);
+            progressDialog = new ProgressDialog(this);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -194,10 +194,13 @@ public class StudentRegister extends AppCompatActivity {
             Toast.makeText(StudentRegister.this, "Pic Profile picture from Gallery", Toast.LENGTH_SHORT).show();
         } else if (sMobileNumber.length() != 10) {
             MobileNumber.setError("Invalid📱Mobile Number");
+            MobileNumber.requestFocus();
         } else if (!sEmail.matches("[a-zA-Z0-9._-]+@[a-z]+.[a-z]+")) {
             Email.setError("Invalid Email Id");
+            Email.requestFocus();
         } else if (sPassword.length() < 6) {
             Password.setError("📱Minimum 6 digits");
+            Password.requestFocus();
         } else {
             result = true;
         }
