@@ -50,6 +50,13 @@ public class MyProfile extends Fragment {
         firebaseDatabase = FirebaseDatabase.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();
 
+        StorageReference storageReference =firebaseStorage.getReference();
+        storageReference.child("Student/Profile Pictures").child(firebaseAuth.getUid()).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Picasso.get().load(uri).fit().centerCrop().into(ProfileImage);
+            }
+        });
         DatabaseReference databaseReference = firebaseDatabase.getReference().child("Student").child(firebaseAuth.getUid());
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
